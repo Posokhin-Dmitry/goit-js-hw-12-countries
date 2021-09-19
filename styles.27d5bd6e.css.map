@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/styles.scss"],"names":[],"mappings":"AAAA,IACE,aAAA,CACA,kBAAA,CACA,eAAA,CACA","file":"styles.27d5bd6e.css","sourceRoot":"../src","sourcesContent":["img {\n  display: block;\n  object-fit: contain;\n  max-width: 600px;\n  box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.25);\n}\n"]}
