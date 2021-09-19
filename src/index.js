@@ -36,6 +36,10 @@ function fetchFinish(country) {
     return;
   } else if (country.length > 1) {
     refs.countryContainer.innerHTML = listCountry(country);
+    const listGroup = document.querySelector('.list-group');
+    listGroup.addEventListener('click', event => {
+      countryApi.fetchCountry(event.target.textContent).then(fetchFinish).catch(fetchError);
+    });
     return;
   }
   refs.countryContainer.innerHTML = fullCountry(country);
