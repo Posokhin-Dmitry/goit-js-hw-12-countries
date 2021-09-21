@@ -22,7 +22,9 @@ var debounce = require('lodash.debounce');
 refs.searchCountry.addEventListener('input', debounce(onSearch, 500));
 
 function onSearch(event) {
-  countryApi.fetchCountry(event.target.value).then(fetchFinish).catch(fetchError);
+  if (event.target.value.trim() !== '') {
+    countryApi.fetchCountry(event.target.value).then(fetchFinish).catch(fetchError);
+  }
 }
 
 function fetchFinish(country) {
