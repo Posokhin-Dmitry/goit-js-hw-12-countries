@@ -47,5 +47,4 @@ function fetchFinish(country) {
 
 function fetchError(err) {
   refs.countryContainer.innerHTML = '';
-  alert({ text: 'Check the correctness of the data entered!' });
 }
