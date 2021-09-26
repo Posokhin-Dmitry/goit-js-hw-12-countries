@@ -13,7 +13,7 @@
         </ul>
       </div>
       <div class='card-img'>
-        <img src='{{flag}}' alt='flag {{name}}' />
+        <img {{#each flags}} {{#if @first}} src='{{this}}' {{/if}} {{/each}} alt='flag {{name}}' />
       </div>
     </div>
   </div>
